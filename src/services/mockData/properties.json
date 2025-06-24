@@ -1,0 +1,152 @@
+[
+  {
+    "Id": 1,
+    "title": "Luxury Waterfront Estate",
+    "price": 2850000,
+    "address": {
+      "street": "1247 Oceanview Drive",
+      "city": "Malibu",
+      "state": "CA",
+      "zipCode": "90265",
+      "fullAddress": "1247 Oceanview Drive, Malibu, CA 90265"
+    },
+    "bedrooms": 5,
+    "bathrooms": 4.5,
+    "squareFeet": 4200,
+    "propertyType": "Single Family",
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&h=500&fit=crop"
+    ],
+    "description": "Stunning oceanfront estate featuring panoramic views, gourmet kitchen with premium appliances, master suite with private balcony, infinity pool, and direct beach access. This architectural masterpiece combines luxury living with coastal elegance.",
+    "amenities": ["Ocean View", "Swimming Pool", "Gourmet Kitchen", "Fireplace", "Balcony", "Beach Access", "Wine Cellar"],
+    "coordinates": {
+      "lat": 34.0259,
+      "lng": -118.7798
+    },
+    "listingDate": "2024-01-15T00:00:00.000Z",
+    "status": "Active"
+  },
+  {
+    "Id": 2,
+    "title": "Modern Downtown Penthouse",
+    "price": 1650000,
+    "address": {
+      "street": "888 Grand Avenue, Unit 4501",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipCode": "90017",
+      "fullAddress": "888 Grand Avenue, Unit 4501, Los Angeles, CA 90017"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 2400,
+    "propertyType": "Condo",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop"
+    ],
+    "description": "Sophisticated penthouse in the heart of downtown with floor-to-ceiling windows, modern finishes, and breathtaking city skyline views. Features include chef's kitchen, spa-like bathrooms, and private rooftop terrace.",
+    "amenities": ["City View", "Rooftop Terrace", "Modern Kitchen", "Spa Bathroom", "Floor-to-Ceiling Windows", "Concierge Service"],
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    },
+    "listingDate": "2024-01-20T00:00:00.000Z",
+    "status": "Active"
+  },
+  {
+    "Id": 3,
+    "title": "Charming Victorian Home",
+    "price": 875000,
+    "address": {
+      "street": "342 Maple Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipCode": "94117",
+      "fullAddress": "342 Maple Street, San Francisco, CA 94117"
+    },
+    "bedrooms": 4,
+    "bathrooms": 2.5,
+    "squareFeet": 2800,
+    "propertyType": "Townhouse",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=500&fit=crop"
+    ],
+    "description": "Beautifully restored Victorian home with original hardwood floors, ornate moldings, and period details. Updated with modern amenities while preserving historic character. Private garden and two-car garage.",
+    "amenities": ["Historic Character", "Hardwood Floors", "Private Garden", "Two-Car Garage", "Updated Kitchen", "Original Details"],
+    "coordinates": {
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    "listingDate": "2024-01-10T00:00:00.000Z",
+    "status": "Active"
+  },
+  {
+    "Id": 4,
+    "title": "Contemporary Mountain Retreat",
+    "price": 1200000,
+    "address": {
+      "street": "567 Pine Ridge Road",
+      "city": "Aspen",
+      "state": "CO",
+      "zipCode": "81611",
+      "fullAddress": "567 Pine Ridge Road, Aspen, CO 81611"
+    },
+    "bedrooms": 4,
+    "bathrooms": 3.5,
+    "squareFeet": 3500,
+    "propertyType": "Single Family",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop"
+    ],
+    "description": "Stunning contemporary home nestled in the mountains with panoramic views, vaulted ceilings, stone fireplace, and seamless indoor-outdoor living. Perfect for year-round mountain lifestyle.",
+    "amenities": ["Mountain View", "Stone Fireplace", "Vaulted Ceilings", "Outdoor Living", "Hot Tub", "Ski Storage"],
+    "coordinates": {
+      "lat": 39.1911,
+      "lng": -106.8175
+    },
+    "listingDate": "2024-01-25T00:00:00.000Z",
+    "status": "Active"
+  },
+  {
+    "Id": 5,
+    "title": "Elegant Suburban Estate",
+    "price": 750000,
+    "address": {
+      "street": "129 Willowbrook Lane",
+      "city": "Greenwich",
+      "state": "CT",
+      "zipCode": "06830",
+      "fullAddress": "129 Willowbrook Lane, Greenwich, CT 06830"
+    },
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "squareFeet": 4800,
+    "propertyType": "Single Family",
+    "images": [
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop"
+    ],
+    "description": "Magnificent colonial estate on 2 acres with mature landscaping, circular driveway, and premium finishes throughout. Features grand foyer, formal dining room, library, and three-car garage.",
+    "amenities": ["2 Acres", "Circular Driveway", "Library", "Formal Dining", "Three-Car Garage", "Mature Landscaping"],
+    "coordinates": {
+      "lat": 41.0534,
+      "lng": -73.5387
+    },
+    "listingDate": "2024-01-05T00:00:00.000Z",
+    "status": "Active"
+  }
+]
