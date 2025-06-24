@@ -1,16 +1,17 @@
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
-import ApperIcon from '@/components/ApperIcon';
-import Button from '@/components/atoms/Button';
-import Text from '@/components/atoms/Text';
-import Badge from '@/components/atoms/Badge';
-import ImageGallery from '@/components/molecules/ImageGallery';
-import SkeletonLoader from '@/components/organisms/SkeletonLoader';
-import ErrorState from '@/components/organisms/ErrorState';
-import propertyService from '@/services/api/propertyService';
-import savedPropertyService from '@/services/api/savedPropertyService';
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { toast } from "react-toastify";
+import ContactForm from "@/components/molecules/ContactForm";
+import savedPropertyService from "@/services/api/savedPropertyService";
+import propertyService from "@/services/api/propertyService";
+import ApperIcon from "@/components/ApperIcon";
+import ImageGallery from "@/components/molecules/ImageGallery";
+import SkeletonLoader from "@/components/organisms/SkeletonLoader";
+import ErrorState from "@/components/organisms/ErrorState";
+import Text from "@/components/atoms/Text";
+import Badge from "@/components/atoms/Badge";
+import Button from "@/components/atoms/Button";
 
 const PropertyDetail = () => {
   const { id } = useParams();
@@ -20,7 +21,7 @@ const PropertyDetail = () => {
   const [error, setError] = useState(null);
   const [isSaved, setIsSaved] = useState(false);
   const [saving, setSaving] = useState(false);
-
+  const [showContactForm, setShowContactForm] = useState(false);
   const loadProperty = async () => {
     setLoading(true);
     setError(null);
@@ -92,8 +93,8 @@ const PropertyDetail = () => {
     }
   };
 
-  const handleContactInquiry = () => {
-    toast.success('Inquiry submitted! We\'ll contact you soon.');
+const handleContactToggle = () => {
+    setShowContactForm(prev => !prev);
   };
 
   const pageVariants = {
@@ -221,15 +222,15 @@ const PropertyDetail = () => {
                 </div>
               </div>
 
-              {/* Action Buttons */}
+{/* Action Buttons */}
               <div className="space-y-3">
                 <Button
-                  onClick={handleContactInquiry}
+                  onClick={handleContactToggle}
                   className="w-full flex items-center justify-center space-x-2"
                   size="lg"
                 >
                   <ApperIcon name="MessageCircle" className="w-5 h-5" />
-                  <span>Contact Agent</span>
+                  <span>{showContactForm ? 'Hide Contact Form' : 'Contact Agent'}</span>
                 </Button>
                 
                 <Button
@@ -248,6 +249,17 @@ const PropertyDetail = () => {
                   <span>{isSaved ? 'Remove from Saved' : 'Save Property'}</span>
                 </Button>
               </div>
+
+              {/* Contact Form */}
+              <AnimatePresence>
+                {showContactForm && (
+                  <ContactForm
+                    propertyId={property.Id}
+                    propertyTitle={property.title}
+                    onClose={() => setShowContactForm(false)}
+                  />
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </div>

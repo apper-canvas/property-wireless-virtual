@@ -2,6 +2,7 @@ import { forwardRef } from 'react';
 
 const Input = forwardRef(({ 
   type = 'text', 
+  as = 'input',
   className = '', 
   error = false,
   ...props 
@@ -10,10 +11,12 @@ const Input = forwardRef(({
   const normalClasses = 'border-gray-300 focus:ring-accent focus:border-accent';
   const errorClasses = 'border-error focus:ring-error focus:border-error';
 
+  const Component = as;
+
   return (
-    <input
+    <Component
       ref={ref}
-      type={type}
+      type={as === 'input' ? type : undefined}
       className={`${baseClasses} ${error ? errorClasses : normalClasses} ${className}`}
       {...props}
     />
